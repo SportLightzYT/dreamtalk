@@ -9,7 +9,7 @@ module.exports = async function (context) {
     }
 
     const client = new sdk.Client()
-        .setEndpoint(process.env.APPWRITE_FUNCTION_ENDPOINT || 'https://cloud.appwrite.io/v1')
+        .setEndpoint(process.env.APPWRITE_FUNCTION_ENDPOINT || 'https://sgp.cloud.appwrite.io/v1')
         .setProject(process.env.APPWRITE_FUNCTION_PROJECT_ID)
         .setKey(process.env.APPWRITE_FUNCTION_API_KEY);
 
@@ -35,4 +35,5 @@ module.exports = async function (context) {
         context.error("Error: " + err.message);
         return context.res.json({ error: err.message }, 500);
     }
+
 };
