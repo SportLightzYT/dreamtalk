@@ -1,8 +1,9 @@
 {
   "name": "link-user-database",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "main.js",
   "dependencies": {
     "node-appwrite": "^11.0.0"
   }
+
 }
